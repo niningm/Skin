@@ -1,49 +1,51 @@
-.intoro{
-    background-color: #F5F5F5;
-    text-align: center;
-}
+@media screen and (max-width:480px) {
+    .intoro{
+        background-color: #F5F5F5;
+        text-align: center;
+    }
 
-.intoro h5{
-    font-size:50px;
-}
+    .intoro h5{
+        font-size:50px;
+    }
 
-.intoro{
-    font-size:30px;
-}
+    .intoro{
+        font-size:30px;
+    }
 
-.tweet{
-    background-color: #F5F5F5;
-    text-align: center;
-    font-size:100px;
-}
+    .tweet{
+        background-color: #F5F5F5;
+        text-align: center;
+        font-size:100px;
+    }
 
-.link{
-    font-size:35px;
-}
+    .link{
+        font-size:35px;
+    }
 
-.circle1{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #F5F0E1;
-}
+    .circle1{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #F5F0E1;
+    }
 
-.circle2{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #F5D5DA;
-}
-.circle3{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #C9F5D1;
-}
+    .circle2{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #F5D5DA;
+    }
+    .circle3{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #C9F5D1;
+    }
 
-.circle4{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #C9D1F5;
+    .circle4{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #C9D1F5;
+    }
 }

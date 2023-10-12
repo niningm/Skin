@@ -1,9 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width:480px) {
+
+  * {
+      margin: 0;
+      padding: 0;
   }
 
-  
+  .moji{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    color: #F5F5F5;
+    font-size: 27px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
   .first-block {
     background-color: #F5F5F5;
     width: 100%;
@@ -30,13 +40,20 @@
     border-bottom: solid 1px #686260;
   }
 
+  .moji2{
+    position: absolute;
+    left: 67%;
+    top: 48%;
+    font-size: 27px;
+    color: #F5F5F5;
+  }
   .two{
     width: 40%;
+    margin-left: 15%;
   }
 
-  
   .abaut{
-    margin-left: 40px;
+    margin-left: 10%;
   }
 
   
@@ -95,3 +112,4 @@
   .geek{
     padding-top: 50px;
   }
+}

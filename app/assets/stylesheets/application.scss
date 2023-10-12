@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+ @media screen and (max-width:480px) {
 
 
   $base-duration: 500ms;
@@ -228,3 +228,4 @@
     
   
   }
+ }
