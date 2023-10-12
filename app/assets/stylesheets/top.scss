@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .first-block {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 800px;
+  }
+
+  .botan{
+    background-color: #F5F5F5;
+    font-size:15px;
+    text-align: center;
+  }
+
+  .one{
+    width: 100%
+  }
+  
+  .second-block {
+    height: auto;
+    background-color: #F5F5F5;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    border-top: solid 1px #686260;
+    border-bottom: solid 1px #686260;
+  }
+
+  .two{
+    width: 40%;
+  }
+
+  
+  .abaut{
+    margin-left: 40px;
+  }
+
+  
+  .hr{
+    height: 30px;
+    background-color: #686260;
+    width: 100%;
+    border: none;
+  }
+  
+  .third-block {
+    height: 1000px;
+    background-color: #F5F5F5;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .futu{
+    width: 50%;
+    text-align: center;
+  }
+
+  .three{
+    width: 30%;
+  }
+
+  .sisei{
+    width: 50%;
+    text-align: center;
+  }
+
+  .four{
+    width: 30%;
+  }
+
+  .kanso{
+    width: 50%;
+    text-align: center;
+  }
+
+  .five{
+    width: 30%;
+  }
+
+  .kongou{
+    width: 50%;
+    text-align: center;
+  }
+
+  .six{
+    width: 30%;
+  }
+
+
+  .geek{
+    padding-top: 50px;
+  }

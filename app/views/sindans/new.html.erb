@@ -1,0 +1,73 @@
+<%= form_for(@sindans, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <p>Question1. 肌がつっぱる？</p>
+            </div>
+            <div class="space">
+                <br>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+            </div>
+            <div class="space">
+                <br>
+                <br>
+            </div>
+            <div class="col-12">
+                <p>Question2. 化粧のノリが悪い？</p>
+            </div>
+            <div class="space">
+                <br>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+            </div>
+            <div class="space">
+                <br>
+                <br>
+            </div>
+            <div class="col-12">
+                <p>Question3. 化粧が崩れやすい？</p>
+            </div>
+            <div class="space">
+                <br>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+            </div>
+            <div class="space">
+                <br>
+                <br>
+            </div>
+            <div class="col-12">
+                <p>Question4. 肌がテカリやすい？</p>
+            </div>
+            <div class="space">
+                <br>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+            </div>
+            <div class="space">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "　結果　" %>
+    </div>
+<% end %>

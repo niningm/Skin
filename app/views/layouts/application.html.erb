@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skin</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  </head>
+
+  <body>
+    
+
+
+    <input type="checkbox" id="menu" />
+<label for="menu" class="menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<nav class="nav">
+  <ul>
+    <li><a href="#">ホーム</a></li>
+    <li><a href="#">肌診断</a></li>
+    <li><a href="#">普通肌</a></li>
+    <li><a href="#">脂性肌</a></li>
+    <li><a href="#">乾燥肌</a></li>
+    <li><a href="#">混合肌</a></li>
+  </ul>
+</nav>
+
+
+<main>
+  <header>
+    <h1><i class="fa fa-picture-o" aria-hidden="true"></i></h1>
+  </header>
+
+ 
+  <%= yield %>
+
+</main>
+
+  </body>
+</html>
+

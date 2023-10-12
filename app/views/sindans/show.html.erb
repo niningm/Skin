@@ -1,0 +1,75 @@
+<div class="intoro">
+    <br>
+    <h5>診断結果</h5>
+    <br>
+    <p>あなたは...</p>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @sindans.question == "1111" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "1112" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "1121" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "1122" %>
+    <span class="circle3">乾燥肌</span><br>
+    <%= link_to "こちらへ", kuwasiku3_path, class: "link" %>
+
+    <% elsif @sindans.question == "1211" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "1212" %>
+    <span class="circle2">脂性肌</span><br>
+    <%= link_to "こちらへ", kuwasiku2_path, class: "link" %>
+
+    <% elsif @sindans.question == "1221" %>
+    <span class="circle2">脂性肌</span><br>
+    <%= link_to "こちらへ", kuwasiku2_path, class: "link" %>
+
+    <% elsif @sindans.question == "1222" %>
+    <span class="circle1">普通肌</span><br>
+    <%= link_to "こちらへ", kuwasiku1_path, class: "link" %>
+
+    <% elsif @sindans.question == "2111" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "2112" %>
+    <span class="circle2">脂性肌</span><br>
+    <%= link_to "こちらへ", kuwasiku2_path, class: "link" %>
+
+    <% elsif @sindans.question == "2121" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "2122" %>
+    <span class="circle1">普通肌</span><br>
+    <%= link_to "こちらへ", kuwasiku1_path, class: "link" %>
+
+    <% elsif @sindans.question == "2211" %>
+    <span class="circle2">脂性肌</span><br>
+    <%= link_to "こちらへ", kuwasiku2_path, class: "link" %>
+
+    <% elsif @sindans.question == "2212" %>
+    <span class="circle4">混合肌</span><br>
+    <%= link_to "こちらへ", kuwasiku4_path, class: "link" %>
+
+    <% elsif @sindans.question == "2221" %>
+    <span class="circle1">普通肌</span><br>
+    <%= link_to "こちらへ", kuwasiku1_path, class: "link" %>
+
+    <% elsif @sindans.question == "2222" %>
+    <span class="circle1">普通肌</span><br>
+    <%= link_to "こちらへ", kuwasiku1_path, class: "link" %>
+
+    <% end %>
+
+</div>

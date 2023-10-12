@@ -1,0 +1,50 @@
+<body>
+  
+  
+<!--  コンテンツを一旦仮置きする  -->
+  <div class="first-block">
+        <%= image_tag "skin1.jpg", class:"one" %>
+  </div>
+
+  <div class="botan">
+        <%= link_to "診断を始める", new_sindan_path, class: "link" %>
+  </div>
+
+
+  <div class="second-block">
+     <p class="abaut">
+            自分の肌質って本当は何？<br>
+            肌に合ったケアを行うために、<br>
+            まずは自分の肌タイプを知ることから始めましょう！
+      </p>
+
+            <%= image_tag "skin2.jpg", class:"two" %>   
+    </div>
+
+  <div class="third-block">
+        <div class="futu">
+         <%= image_tag "skin3.jpg", class:"three"%>
+          <p>普通肌</p>
+        </div>
+
+        <div class="sisei">
+            <%= image_tag "skin4.jpg", class:"four"%>
+         <p>脂性肌</p>
+        </div>
+
+        <div class="kanso">
+            <%= image_tag "skin5.jpg", class:"five"%>
+            <p>乾燥肌</p>
+        </div>
+
+        <div class="kongou">
+            <%= image_tag "skin6.jpg", class:"six"%>
+            <p>混合肌</p>
+        </div>
+       
+    </div>
+<!--  コンテンツはここまで  -->
+
+  <footer>	
+  </footer>
+</body>
