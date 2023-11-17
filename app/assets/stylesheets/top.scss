@@ -1,22 +1,121 @@
 
+@charset "utf-8";
+
+
   * {
       margin: 0;
       padding: 0;
   }
 
-  .moji{
+  .moji1{
     position: absolute;
-    left: 10%;
-    top: 15%;
+    margin-left: 137px;
+    top: 34%;
     color: #F5F5F5;
-    font-size: 27px;
+    font-size: 40px;
     font-family: 'Noto Sans JP', sans-serif;
+    z-index: 10; 
   }
 
   .first-block {
     background-color: #F5F5F5;
     width: 100%;
-    height: 800px;
+    height: 670px;
+    position: relative;
+  }
+
+  .nya{
+    background-color: #F5F5F5;
+    
+  }
+
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+  }
+   
+  .slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  
+  }
+  
+  @keyframes slideshow {
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 1;
+    }
+    28%{
+      opacity: 1
+    }
+    38%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+ 
+    opacity: 0;
+    animation :slideshow 24s linear infinite;
+  }
+
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+  }
+   
+  @keyframes slideshow{
+    0%{
+      opacity: 0;
+    }
+    10%{
+      opacity: 1;
+    }
+    28%{
+      opacity: 1
+    }
+    38%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+   
+  .slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   
+    opacity: 0;
+    animation :slideshow 24s linear infinite;
+  }
+   
+  .slide img:nth-child(2){
+    animation-delay: 8s;
+  }
+   
+  .slide img:last-child{
+    animation-delay: 16s;
   }
 
   .botan{
@@ -24,6 +123,11 @@
     font-size:15px;
     text-align: center;
   }
+
+  .link{
+    color: #686260;
+  }
+
 
   .one{
     width: 100%
@@ -42,7 +146,7 @@
   .moji2{
     position: absolute;
     left: 67%;
-    top: 48%;
+    top: 45%;
     font-size: 27px;
     color: #F5F5F5;
   }
@@ -76,8 +180,13 @@
     text-align: center;
   }
 
-  .three{
-    width: 30%;
+  .futu2{
+    width: 37%;
+  }
+
+  .futu a:hover{ 
+    opacity:0.5;
+    transition:0.3s;
   }
 
   .sisei{
@@ -85,8 +194,13 @@
     text-align: center;
   }
 
-  .four{
-    width: 30%;
+  .sisei2{
+    width: 37%;
+  }
+
+  .sisei a:hover{ 
+    opacity:0.5;
+    transition:0.3s;
   }
 
   .kanso{
@@ -94,8 +208,13 @@
     text-align: center;
   }
 
-  .five{
-    width: 30%;
+  .kanso2{
+    width: 37%;
+  }
+
+  .kanso a:hover{ 
+    opacity:0.5;
+    transition:0.3s;
   }
 
   .kongou{
@@ -103,11 +222,100 @@
     text-align: center;
   }
 
-  .six{
-    width: 30%;
+  .kongou2{
+    width: 37%;
   }
 
+  .kongou a:hover{ 
+    opacity:0.5;
+    transition:0.3s;
+  }
 
   .geek{
     padding-top: 50px;
   }
+
+
+  /*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+#splash{
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img{
+  width:260px;
+}
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+/*==================================================
+ふわっ
+===================================*/
+
+
+/* fadeUp */
+
+.fadeUp{
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.fadeUpTrigger{
+    opacity: 0;
+}
+
+

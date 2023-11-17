@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Skin</title>
+    <link rel="icon" href="/assets/logo.ico">
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,40 +16,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
 
+    
+    <meta charset="utf-8">
+    <title>4-1-4 ロゴアニメーション</title>
+    <meta name="description" content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/3-2-3-1.css">
+    
+  </head>
+
+    
+    
   </head>
 
   <body>
-    
-
-
     <input type="checkbox" id="menu" />
-<label for="menu" class="menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</label>
+    <label for="menu" class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-<nav class="nav">
-  <ul>
-    <li><a href="#">ホーム</a></li>
-    <li><a href="#">肌診断</a></li>
-    <li><a href="#">普通肌</a></li>
-    <li><a href="#">脂性肌</a></li>
-    <li><a href="#">乾燥肌</a></li>
-    <li><a href="#">混合肌</a></li>
-  </ul>
-</nav>
+    <nav class="nav">
+      <ul>
+        <li><%= link_to "ホーム", top_path, class: "link" %></li>
+        <li><%= link_to "診断", new_sindan_path, class: "link" %></a></li>
+        <li><%= link_to "普通肌", kuwasiku1_path, class: "link" %></li>
+        <li><%= link_to "脂性肌", kuwasiku2_path, class: "link" %></li>
+        <li><%= link_to "乾燥肌", kuwasiku3_path, class: "link" %></li>
+        <li><%= link_to "混合肌", kuwasiku4_path, class: "link" %></li>
+      </ul>
+    </nav>
 
 
-<main>
-  <header>
-    <h1><i class="fa fa-picture-o" aria-hidden="true"></i></h1>
-  </header>
+    <main>
+      <header>
+        <h1><i class="fa fa-picture-o" aria-hidden="true"></i></h1>
+      </header>
 
- 
-  <%= yield %>
+    
+      <%= yield %>
 
-</main>
+    </main>
 
   </body>
 </html>

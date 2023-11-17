@@ -2,72 +2,86 @@
     <div class="container-sindan">
         <div class="row">
             <div class="col-12">
-                <p>Question1. 肌がつっぱる？</p>
+                <br><br><br>
+                <p>Q1. 肌がつっぱる？</p>
             </div>
             <div class="space">
-                <br>
+                <br><br>
             </div>
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+                <div class="col-7">
+                    <%= f.radio_button :question, "1", id: "custom_id1" %>
+                    <label for="custom_id1">YES</label>
+                </div>
+                <div class="col-7">
+                    <%= f.radio_button :question, "2", id: "custom_id2" %>
+                    <label for="custom_id2">NO</label>
+                </div>
             </div>
             <div class="space">
-                <br>
-                <br>
+                <br><br><br><br><br><br><br><br><br>
             </div>
             <div class="col-12">
-                <p>Question2. 化粧のノリが悪い？</p>
+                <br><br><br>
+                <p>Q2. 化粧のノリが悪い？</p>
             </div>
             <div class="space">
                 <br>
             </div>
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+                <div class="col-7">
+                    <%= f.radio_button :question2, "1", id: "custom_id3" %>
+                    <label for="custom_id3">YES</label>
+                </div>
+                <div class="col-7">
+                    <%= f.radio_button :question2, "2", id: "custom_id4" %>
+                    <label for="custom_id4">NO</label>
+                </div>
             </div>
             <div class="space">
-                <br>
-                <br>
+                <br><br><br><br><br><br><br><br><br>
             </div>
             <div class="col-12">
-                <p>Question3. 化粧が崩れやすい？</p>
+                <p>Q3. 化粧が崩れやすい？</p>
             </div>
             <div class="space">
                 <br>
             </div>
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+                <div class="col-7">
+                    <%= f.radio_button :question3, "1", id: "custom_id5" %>
+                    <label for="custom_id5">YES</label>
+                </div>
+                <div class="col-7">
+                    <%= f.radio_button :question3, "2", id: "custom_id6" %>
+                    <label for="custom_id6">NO</label>
+                </div>
             </div>
             <div class="space">
-                <br>
-                <br>
+                <br><br><br><br><br><br><br><br><br>
             </div>
             <div class="col-12">
-                <p>Question4. 肌がテカリやすい？</p>
+                <p>Q4. 肌がテカリやすい？</p>
             </div>
             <div class="space">
                 <br>
             </div>
             <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "1", nil %>YES</p>
-            </div>
-            <div class="col-6">
-                <p><%= f.check_box :question, {multiple: true}, "2", nil %>NO</p>
+                <div class="col-7">
+                    <%= f.radio_button :question4, "1", id: "custom_id7" %>
+                    <label for="custom_id7">YES</label>
+                </div>
+                <div class="col-7">
+                    <%= f.radio_button :question4, "2", id: "custom_id8" %>
+                    <label for="custom_id8">NO</label>
+                </div>
             </div>
             <div class="space">
-                <br>
-                <br>
+                <br><br><br><br><br><br><br><br><br>
             </div>
         </div>
     </div>
     <div class="sindanbotan">
-        <%= f.submit "　結果　" %>
+        <%= f.submit "結果", class: "button" %>
     </div>
 <% end %>

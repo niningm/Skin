@@ -22,7 +22,6 @@ class SindansController < ApplicationController
   
     def create
       @sindans = Sindan.new(sindan_params)
-      params[:sindan][:question] ? @sindans.question = params[:sindan][:question].join("") : false
       if @sindans.save
           flash[:notice] = "診断が完了しました"
           redirect_to sindan_path(@sindans.id)
@@ -33,7 +32,7 @@ class SindansController < ApplicationController
   
   private
     def sindan_params
-        params.require(:sindan).permit(:id, question: [])
+        params.require(:sindan).permit(:id, :question2, :question3, :question4, :question)
     end
 
 end

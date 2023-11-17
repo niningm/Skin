@@ -1,14 +1,23 @@
+<div id="splash">
+    <div id="splash_logo">
+      <img src="assets/logo.png" alt="" class="fadeUp">
+    </div>
+</div>
+
+
 <body>
-
-  
-  <div class="moji">
-        自分にあったスキンケアを<br>
-        SKIN DIANOSIS
-  </div>
-
-  <div class="first-block">
-        <%= image_tag "skin1.jpg", class:"one" %>
-  </div>
+    <div class="first-block">
+        <div class="moji1">
+            自分に合ったスキンケアを<br>
+              SKIN DIAGNOSIS
+        </div>
+        <div class="slide">
+            <img src="assets/sskin1.jpg" alt="">
+            <img src="assets/sskin2.jpg" alt="">
+            <img src="assets/sskin3.jpg" alt="">
+            
+        </div> 
+    </div>
 
   <div class="botan">
         <%= link_to "診断を始める", new_sindan_path, class: "link" %>
@@ -32,23 +41,40 @@
 
   <div class="third-block">
         <div class="futu">
-         <%= image_tag "skin3.jpg", class:"three"%>
-          <p>普通肌</p>
+         <%= link_to kuwasiku1_path do %>
+            <div class="fadeUpTrigger">
+                <%= image_tag "futu.png", class:"futu2" %>
+                <p>普通肌</p>
+            </div>
+         <% end %>
+    
         </div>
 
         <div class="sisei">
-            <%= image_tag "skin4.jpg", class:"four"%>
-         <p>脂性肌</p>
+         <%= link_to kuwasiku2_path do %>
+            <div class="fadeUpTrigger">
+                <%= image_tag "sisei.png", class:"sisei2" %>
+                <p>脂性肌</p>
+            </div>
+         <% end %>
         </div>
 
         <div class="kanso">
-            <%= image_tag "skin5.jpg", class:"five"%>
-            <p>乾燥肌</p>
+         <%= link_to kuwasiku3_path do %>
+            <div class="fadeUpTrigger">
+                <%= image_tag "kanso.png", class:"kanso2" %>
+                <p>乾燥肌</p>
+            </div>
+         <% end %>
         </div>
 
         <div class="kongou">
-            <%= image_tag "skin6.jpg", class:"six"%>
-            <p>混合肌</p>
+         <%= link_to kuwasiku4_path do %>
+            <div class="fadeUpTrigger">
+                <%= image_tag "kongou.png", class:"kongou2" %>
+                <p>混合肌</p>
+            </div>
+         <% end %>
         </div>
        
     </div>
@@ -57,3 +83,13 @@
   <footer>	
   </footer>
 </body>
+
+<!--==============JQuery読み込み===============-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
